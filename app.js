@@ -16,8 +16,17 @@ async function buscarTituloMusica (nome) {
 
 async function buscarArtista() {
     const inputArtist = document.getElementById('buscar-artista');
-    const namePesquisado = inputArtist.value;
-    const listArtist = document.getElementById('lista')
+    const nomePesquisado = inputArtist.value;
+    const listArtist = document.getElementById('lista');
+
+    if(!nomePesquisado){
+        listArtist = '<p style="color: red;">Por favor, digite um nome de artista.</p>'
+        return;
+    }
+
+    const artistas = await buscarTituloMusica(nomePesquisado)
+
+    exibirResultadoArtista(artistas, cardElement);
 }
 
 buscarTituloMusica("Madonna");
