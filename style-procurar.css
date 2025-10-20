@@ -10,7 +10,6 @@ body{
     height: 1080px;
     width: 1920px;
     display: flex;
-    flex-direction: column;
     background-image: url(./img/mscAntiga.jpg);
     background-size: cover;
     background-position: center;
@@ -21,7 +20,46 @@ body{
 
 .menu{
     display: flex;
-    height: 10vh;
-    width: 10vh;
+    height: 1080px;;
+    width: 40vh;
     background-color: #7B5722;
+    align-items: center;
+    flex-direction: column;
+    padding-block: 30px;
+    gap: 50px;
+}
+
+.placeholder{
+    height: 20px;
+    width: 20vh;
+}
+
+.catalogo {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10vh;
+    background-color: aliceblue;
+}
+
+.lista{
+    display: flex;
+    height: 5vh;
+    width: 150vh;
+    gap: 20px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #dad1c4;
+
+    
+}
+
+.claveSol{
+    height: 4vh;
+    width: 4vh;
+    justify-content: center;
 }
