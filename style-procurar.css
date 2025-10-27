@@ -42,7 +42,7 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 10vh;
-    background-color: aliceblue;
+    
 }
 
 .lista{
@@ -54,8 +54,6 @@ body{
     margin: 10px;
     border-radius: 20px;
     background-color: #dad1c4;
-
-    
 }
 
 .claveSol{
